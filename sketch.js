@@ -79,12 +79,12 @@ function bastoes() {
       yBarra1 -= 7;
     }
     // === TECLA S ===
-    if (keyIsDown(83) && yBarra1 <= height - 80) {
+    if (keyIsDown(83) && yBarra1 <= height - 100) {
       yBarra1 += 7;
     }
 
     // === TECLA SETA PRA BAIXO ===
-    if (keyIsDown(DOWN_ARROW) && yBarra2 <= height - 80) {
+    if (keyIsDown(DOWN_ARROW) && yBarra2 <= height - 100) {
       yBarra2 += 7;
     }
     // === TECLA SETA PRA CIMA ===
@@ -151,10 +151,10 @@ function jogarMulti() {
   } else if (xBola >= 380) {
     reiniciarPartida();
     jogador1++;
-  } else if (jogador1 == 5) {
+  } else if (jogador1 - jogador2 >= 5) {
     vencedor1 = true;
     reiniciarJogo();
-  } else if (jogador2 == 5) {
+  } else if (jogador2 - jogador1 >= 5) {
     vencedor2 = true;
     reiniciarJogo();
   }
