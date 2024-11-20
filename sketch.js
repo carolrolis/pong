@@ -112,8 +112,11 @@ function botoes() {
   } else if (jogador2 == 5) {
     text("O jogador 1 venceu!", 130, 100);
   }
+  
+  const buttonContainer = select("#button-container");
+
   botao = createButton("JOGAR");
-  botao.position(130, 140);
+  botao.parent(buttonContainer);
   botao.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
@@ -123,7 +126,7 @@ function botoes() {
   });
 
   botaoMulti = createButton("DOIS JOGADORES");
-  botaoMulti.position(130, 200);
+  botaoMulti.parent(buttonContainer);
   botaoMulti.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
