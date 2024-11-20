@@ -14,10 +14,27 @@ canvas {
   margin: auto;
 }
 
-#button-div {
+/* #button-div {
   position: absolute;
   width: fit-content;
-  top: 140px;
-  left: 130px;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+} */
+
+button {
+  margin: auto;
+  width: 150px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  background: rgb(190, 152, 207);
+}
+
+button:hover {
+  background: rgb(144, 37, 190);
+}
