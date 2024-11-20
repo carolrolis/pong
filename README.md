@@ -1,4 +1,4 @@
-## JavaScript Pong game! STILL ONLY IN PORTUGUESE
+## JavaScript Pong game! STILL ONLY IN PTBR AND DESKTOP
 
 ### Onde jogar?
 > Vá para a Github Page do repositório ou clique aqui: <a href="https://carolrolis.github.io/pong/">Game</a>
