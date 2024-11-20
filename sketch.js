@@ -31,6 +31,8 @@ function setup() {
   
   buttonContainer = createDiv();
   buttonContainer.id('button-div');
+  buttonContainer.parent(container);
+  buttonContainer.position(width / 2 - 70, height / 2 - 60);
 
   botoes();
 }
@@ -117,7 +119,6 @@ function bola() {
 
 function botoes() {
   botao = createButton("JOGAR");
-  botao.position(width / 2 - botao.width/10, height / 2 - 60);
   botao.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
@@ -127,7 +128,6 @@ function botoes() {
   });
 
   botaoMulti = createButton("DOIS JOGADORES");
-  botaoMulti.position(width / 2 - botaoMulti.width/10, height / 2);
   botaoMulti.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
