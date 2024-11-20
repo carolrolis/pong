@@ -20,9 +20,9 @@ let vencedor2 = false;
 // ===============================
 
 function setup() {
-  let canvas = createCanvas(400, 400);
-  canvas.parent('game-container');
+  createCanvas(400, 400);
   noStroke();
+
   botoes();
 }
 
@@ -112,11 +112,8 @@ function botoes() {
   } else if (jogador2 == 5) {
     text("O jogador 1 venceu!", 130, 100);
   }
-  
-  const buttonContainer = select("#button-container");
-
   botao = createButton("JOGAR");
-  botao.parent(buttonContainer);
+  botao.position(130, 140);
   botao.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
@@ -126,7 +123,7 @@ function botoes() {
   });
 
   botaoMulti = createButton("DOIS JOGADORES");
-  botaoMulti.parent(buttonContainer);
+  botaoMulti.position(130, 200);
   botaoMulti.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
