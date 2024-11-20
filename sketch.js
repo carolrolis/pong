@@ -20,9 +20,9 @@ let vencedor2 = false;
 // ===============================
 
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+  canvas.parent('game-container');
   noStroke();
-
   botoes();
 }
 
