@@ -6,5 +6,5 @@
 ### Como jogar?
 > Clique no botão "Jogar" para ir solo ou "Dois Jogadores" para jogar com alguém(ou consigo mesmo também).<br>
 > Os controles solo são as setas pra cima e pra baixo.<br>
-> Os controles multiplayer são W e S para a barra esquerda e setas pra cima e pra baixo para a barra direita.
+> Os controles multiplayer são W e S para a barra esquerda e setas pra cima e pra baixo para a barra direita.<br>
 > Bom jogo! <3
