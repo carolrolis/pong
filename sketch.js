@@ -22,8 +22,13 @@ let vencedor2 = false;
 // ===============================
 
 function setup() {
-  createCanvas(400, 400);
   noStroke();
+  
+  let container = createDiv();
+  container.id('canvas-div');
+  let canvas = createCanvas(400, 400);
+  canvas.parent(container);
+  
   buttonContainer = createDiv();
   buttonContainer.id('button-div');
 
