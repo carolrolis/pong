@@ -2,11 +2,16 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: 'black';
+  background: "black";
 }
 
 canvas {
   display: block;
+}
+
+#canvas-div {
+  width: fit-content;
+  margin: auto;
 }
 
 #button-div {
@@ -16,21 +21,3 @@ canvas {
   left: 130px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-button {
-  margin:auto;
-  width: 150px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
-  background: rgb(190, 152, 207);
-}
-
-button:hover {
-  background: rgb(144, 37, 190);
-}
