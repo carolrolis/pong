@@ -1,3 +1,5 @@
+let buttonContainer;
+
 let yBarra1 = 150;
 let yBarra2 = 150;
 
@@ -22,6 +24,8 @@ let vencedor2 = false;
 function setup() {
   createCanvas(400, 400);
   noStroke();
+  buttonContainer = createDiv();
+  buttonContainer.id('button-div');
 
   botoes();
 }
@@ -107,13 +111,7 @@ function bola() {
 }
 
 function botoes() {
-  if (jogador1 == 5) {
-    text("O jogador 1 venceu!", 130, 100);
-  } else if (jogador2 == 5) {
-    text("O jogador 1 venceu!", 130, 100);
-  }
   botao = createButton("JOGAR");
-  botao.position(130, 140);
   botao.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
@@ -123,7 +121,6 @@ function botoes() {
   });
 
   botaoMulti = createButton("DOIS JOGADORES");
-  botaoMulti.position(130, 200);
   botaoMulti.mousePressed(() => {
     vencedor1 = false;
     vencedor2 = false;
@@ -132,6 +129,9 @@ function botoes() {
     botao.hide();
     botaoMulti.hide();
   });
+  
+  botao.parent(buttonContainer);
+  botaoMulti.parent(buttonContainer);
 }
 
 function jogarMulti() {
