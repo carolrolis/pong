@@ -2,11 +2,55 @@
 <html lang="en">
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Game</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      #game-container {
+        position: relative;
+      }
+
+      #button-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        background-color: #d1b3ff;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #b39ddb;
+      }
+    </style>
   </head>
   <body>
-    <div id="game-container"></div>
+    <div id="game-container">
+      <div id="button-container"></div>
+    </div>
     <script src="sketch.js"></script>
   </body>
 </html>
