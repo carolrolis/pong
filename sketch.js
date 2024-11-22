@@ -79,12 +79,12 @@ function bastoes() {
       yBarra1 -= 7;
     }
     // === TECLA S ===
-    if (keyIsDown(83) && yBarra1 <= height - 100) {
+    if (keyIsDown(83) && yBarra1 <= height - 80) {
       yBarra1 += 7;
     }
 
     // === TECLA SETA PRA BAIXO ===
-    if (keyIsDown(DOWN_ARROW) && yBarra2 <= height - 100) {
+    if (keyIsDown(DOWN_ARROW) && yBarra2 <= height - 80) {
       yBarra2 += 7;
     }
     // === TECLA SETA PRA CIMA ===
